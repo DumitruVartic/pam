@@ -16,7 +16,11 @@ class BarbershopNeareastStatefull extends StatelessWidget {
           height: 100,
           child: Stack(
             children: [
-              Positioned(left: 0, child: Image.asset('assets/Pict1.png')),
+              Positioned(
+                  left: 0,
+                  child: Image.asset(barbershop.image.startsWith('assets/')
+                      ? barbershop.image
+                      : 'assets/Pict1.png')),
               Positioned(
                 left: 108,
                 child: SizedBox(

@@ -5,6 +5,24 @@
   },
   "nearest_barbershop": [
     {
+      "name": "Alana Barbershop - Haircut massage & Spa",
+      "location_with_distance": "Banguntapan (5 km)",
+      "image": "assets/Pict1.png",
+      "review_rate": 4.5
+    },
+    {
+      "name": "Hercha Barbershop - Haircut & Styling",
+      "location_with_distance": "Jalan Kaliurang (8 km)",
+      "image": "assets/Pict2.png",
+      "review_rate": 5.0
+    },
+    {
+      "name": "Barberking - Haircut styling & massage",
+      "location_with_distance": "Jogja Expo Centre (12 km)",
+      "image": "assets/Pict3.png",
+      "review_rate": 4.5
+    },
+    {
       "name": "Barbershop 1",
       "location_with_distance": "Area 1 (1.1 km)",
       "image": "https://example.com/barbershop1.jpg",

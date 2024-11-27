@@ -5,6 +5,8 @@ void main() {
 }
 
 class CurrencyConverterApp extends StatelessWidget {
+  const CurrencyConverterApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,6 +21,8 @@ class CurrencyConverterApp extends StatelessWidget {
 }
 
 class CurrencyConverterScreen extends StatefulWidget {
+  const CurrencyConverterScreen({super.key});
+
   @override
   _CurrencyConverterScreenState createState() =>
       _CurrencyConverterScreenState();
@@ -56,9 +60,9 @@ class _CurrencyConverterScreenState extends State<CurrencyConverterScreen> {
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Container(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: const Color.fromARGB(255, 255, 255, 255),
                 borderRadius: BorderRadius.circular(12),
@@ -82,17 +86,17 @@ class _CurrencyConverterScreenState extends State<CurrencyConverterScreen> {
                           fit: BoxFit.cover,
                         ),
                       ),
-                      SizedBox(width: 8),
-                      Text(
+                      const SizedBox(width: 8),
+                      const Text(
                         'MDL',
                         style: TextStyle(fontSize: 18),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Expanded(
                         child: TextField(
                           controller: _amountController,
                           keyboardType: TextInputType.number,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             hintText: '1000.00',
                             border: OutlineInputBorder(),
                           ),
@@ -100,21 +104,21 @@ class _CurrencyConverterScreenState extends State<CurrencyConverterScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   // IconButton in a customized elliptical Container
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       color: Color(0xFF26278D), // Background color for ellipse
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.swap_vert),
+                      icon: const Icon(Icons.swap_vert),
                       iconSize: 40,
                       color: Colors.white, // Color for arrows inside ellipse
                       onPressed: _convertCurrency,
                     ),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Row(
                     children: <Widget>[
                       ClipOval(
@@ -125,18 +129,18 @@ class _CurrencyConverterScreenState extends State<CurrencyConverterScreen> {
                           fit: BoxFit.cover,
                         ),
                       ),
-                      SizedBox(width: 8),
-                      Text(
+                      const SizedBox(width: 8),
+                      const Text(
                         'USD',
                         style: TextStyle(fontSize: 18),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Expanded(
                         child: TextField(
                           controller: _convertedController,
                           readOnly: true,
                           keyboardType: TextInputType.number,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             hintText: '736.70',
                             border: OutlineInputBorder(),
                           ),
@@ -147,30 +151,30 @@ class _CurrencyConverterScreenState extends State<CurrencyConverterScreen> {
                 ],
               ),
             ),
-            SizedBox(height: 24),
-            Text(
+            const SizedBox(height: 24),
+            const Text(
               'Indicative Exchange Rate',
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Row(
               children: [
-                Text(
+                const Text(
                   '1 USD = ',
                   style: TextStyle(fontSize: 16),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                     color: Colors.grey[300],
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: Text(
                     exchangeRate.toStringAsFixed(2),
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                 ),
-                Text(
+                const Text(
                   ' MDL',
                   style: TextStyle(fontSize: 16),
                 ),
