@@ -11,7 +11,7 @@ class BarberShopHomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
+    return const Positioned(
       top: 57,
       left: 17,
       child: SizedBox(

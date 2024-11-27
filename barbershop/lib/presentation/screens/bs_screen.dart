@@ -11,7 +11,7 @@ class BarbershopScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Barbershop App')),
-        body: BarbershopStateBuilder(),
+        body: const BarbershopStateBuilder(),
       ),
     );
   }

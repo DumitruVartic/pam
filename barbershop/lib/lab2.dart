@@ -29,7 +29,7 @@ class MyHomePage extends StatelessWidget {
           width: 375,
           height: 1667,
           color: Colors.white,
-          child: Stack(
+          child: const Stack(
             children: [BarbershopStatusBar(), BarberShopHomeScreen()],
           ),
         ),

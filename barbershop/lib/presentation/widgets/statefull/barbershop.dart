@@ -3,13 +3,13 @@ import 'package:barbershop/data/repositories/data_bloc.dart';
 import 'package:barbershop/presentation/blocs/data_state.dart';
 import 'package:barbershop/presentation/widgets/statefull/bs_nrst_statefull.dart';
 import 'package:barbershop/presentation/widgets/statefull/bs_statefull_home_card.dart';
+import 'package:barbershop/presentation/widgets/stateless/bs_button.dart';
 import 'package:barbershop/presentation/widgets/stateless/bs_most_recs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../stateless/bs_profile_bar.dart';
 import '../stateless/bs_search_bar.dart';
-import '../stateless/bs_stateless_home_card.dart';
 
 class BarbershopStateBuilder extends StatelessWidget {
   const BarbershopStateBuilder({super.key});
@@ -86,6 +86,7 @@ class BarbershopStateBuilder extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
+          const BarbershopButton(),
           const BarbershopMostRecommended(),
         ],
       ),

@@ -9,7 +9,7 @@ void main() {
   runApp(
     BlocProvider(
       create: (context) => BarbershopBloc()..add(LoadDataEvent()),
-      child: BarbershopScreen(),
+      child: const BarbershopScreen(),
     ),
   );
 }

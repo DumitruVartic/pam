@@ -18,7 +18,7 @@ Widget getImageFromUrl(String url) {
       }
     },
     errorBuilder: (context, error, stackTrace) {
-      return Center(child: Icon(Icons.error));
+      return const Center(child: Icon(Icons.error));
     },
   );
 }

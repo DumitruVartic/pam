@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class BarbershopStatefullHomeCard extends StatelessWidget {
   final BarbershopModel.Banner banner;
 
-  BarbershopStatefullHomeCard({super.key, required this.banner});
+  const BarbershopStatefullHomeCard({super.key, required this.banner});
 
   @override
   Widget build(BuildContext context) {
